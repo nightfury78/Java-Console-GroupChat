@@ -21,9 +21,8 @@ public class HistoryManager {
     public static List<String> getChatHistory() {
         List<String> history = new ArrayList<>();
         File file = new File(FILE_PATH);
-        
         if (!file.exists()) return history;
-
+        	//reads the file and writes on the console screeen
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {

@@ -13,7 +13,6 @@ public class TextMessage extends Message {
 
     @Override
     public String getDisplayContent() {
-        // Formats the output exactly as you requested: "Saim : Hello!"
         return getSender() + " : " + content;
     }
 }
